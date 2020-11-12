@@ -64,9 +64,31 @@
     cursor: pointer;
     height: 3em;
     min-width: 5em;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    text-decoration: none;
 }
 .webui .button:hover {
-    background-color: #ddd;
+    background-color: #e7e7e7;
+}
+.webui .button:after {
+    content: "";
+    background: #ddd;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.webui .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
 }
 
 .webui .button.primary{
@@ -76,6 +98,9 @@
 .webui .button.primary:hover {
     background-color: #0b7dda;
 }
+.webui .button.primary:after{
+    background: #2196F3;
+}
 
 .webui .button.success{
     background-color: #4CAF50;
@@ -84,6 +109,9 @@
 .webui .button.success:hover {
     background-color: #46a049;
 }
+.webui .button.success:after{
+    background: #4CAF50;
+}
 
 .webui .button.danger{
     background-color: #f44336;
@@ -91,4 +119,7 @@
 }
 .webui .button.danger:hover {
     background-color: #da190b;
+}
+.webui .button.danger:after {
+    background: #f44336;
 }
