@@ -222,3 +222,16 @@
 .webui .entrygroup legend {
     font-size: 0.8em;
 }
+
+
+/* divider */
+
+.webui .divider {
+    position: relative;
+    border-collapse: collapse;
+}
+
+.webui .divider.horizontal {
+    border-top: dodgerblue solid 0.1em;
+    width: 100%;
+}
