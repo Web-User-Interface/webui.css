@@ -9,26 +9,50 @@ and open the template in the editor.
         <title>WebUI :: Panel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-        <link href="webui.css" type="text/css" rel="stylesheet">
+        <link href="../dist/webui.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div class="panel">Este conteúdo não faz parte do WebUI.</div>
         <br>
-        <div class="webui panel">Este conteúdo faz parte do WebUI</div>
-        <br>
-        <div class="webui panel">
-            <h1 class="title">Painel com título</h1>
-            <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus. Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum justo non orci. </p>
-        </div>
-        <br>
-        <div class="webui panel">
-            <h1 class="title">
-                <i class="fab fa-css3"></i>
-                Painel com ícone no título
-            </h1>
-            <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus. Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum justo non orci. </p>
+        <div class="webui">
+            <div class="panel">
+                <p>Este conteúdo faz parte do WebUI</p>
+            </div>
+            <br>
+            <div class="panel">
+                <h1 class="title">Painel com título</h1>
+                <div class="content">
+                    <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus. Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum justo non orci. </p>
+                </div>
+            </div>
+            <br>
+            <div class="panel">
+                <h1 class="title">
+                    <i class="fab fa-css3"></i>
+                    Painel com ícone no título
+                </h1>
+                <div class="content">
+                    <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus. Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum justo non orci. </p>
+                </div>
+            </div>
+            <br>
+            <div class="panel">
+                <h1 class="title">
+                    <i class="fab fa-css3"></i>
+                    Painel com toolbars
+                </h1>
+                <div class="topbar">
+                    <span>Aqui temos uma topbar</span>
+                </div>
+                <div class="content" style="height: 15em;">
+                    <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus. Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum justo non orci. </p>
+                </div>
+                <div class="bottombar">
+                    <span>Aqui temos uma bottombar</span>
+                </div>
+            </div>
         </div>
     </body>
 </html>
