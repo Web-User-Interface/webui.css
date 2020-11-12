@@ -179,12 +179,12 @@
 }
 
 .webui .entry label {
-    display: inline;
+    display: block;
     font-size: 0.8em;
 }
 
 .webui .entry input {
-    display: block;
+    /*display: block;*/
     border: lightgray solid 0.1em;
 }
 
@@ -210,8 +210,8 @@
     background-color: lightgray;
 }
 
-.webui .entry input[type="radio"],
-.webui .entry input[type="checkbox"] {
+.webui .entry input[type="radio"]+label,
+.webui .entry input[type="checkbox"]+label {
     display: inline;
 }
 
