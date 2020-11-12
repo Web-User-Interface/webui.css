@@ -54,3 +54,41 @@
     margin: 0;
     outline: none;
 }
+
+/* button */
+.webui .button {
+    border: none;
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 0.3em;
+    cursor: pointer;
+    height: 3em;
+    min-width: 5em;
+}
+.webui .button:hover {
+    background-color: #ddd;
+}
+
+.webui .button.primary{
+    background-color: #2196F3;
+    color: whitesmoke;
+}
+.webui .button.primary:hover {
+    background-color: #0b7dda;
+}
+
+.webui .button.success{
+    background-color: #4CAF50;
+    color: whitesmoke;
+}
+.webui .button.success:hover {
+    background-color: #46a049;
+}
+
+.webui .button.danger{
+    background-color: #f44336;
+    color: whitesmoke;
+}
+.webui .button.danger:hover {
+    background-color: #da190b;
+}
