@@ -1,0 +1,40 @@
+/*
+Base do framework
+*/
+
+@colorDefault: #737373;
+@colorAlternative: #FFFFFF;
+@colorPrimary: #00A4EF;
+@colorPositive: #7FBA00;
+@colorNegative: #F25022;
+@colorAlert: #FFB900;
+
+@baseMetric: 1em;
+
+@borderColor: @colorDefault;
+@borderStyle: solid;
+@borderWidth: @baseMetric / 10;
+
+@fontSizeNormal: @baseMetric;
+
+.bordered {
+    border-color: @borderColor;
+    border-style: @borderStyle;
+    border-width: @borderWidth;
+}
+
+.padded {
+    padding: @baseMetric / 10 * 3;
+}
+
+.title {
+    background-color: @colorDefault;
+    margin: 0;
+    .padded();
+    font-size: @fontSizeNormal;
+    color: @colorAlternative;
+}
+
+.webui {
+    font-family: sans-serif;
+}

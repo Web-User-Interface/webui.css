@@ -1,0 +1,41 @@
+/*
+Arqivo principal para ser compilado
+*/
+/*
+Base do framework
+*/
+.bordered {
+  border-color: #737373;
+  border-style: solid;
+  border-width: 0.1em;
+}
+.padded {
+  padding: 0.3em;
+}
+.title {
+  background-color: #737373;
+  margin: 0;
+  padding: 0.3em;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+.webui {
+  font-family: sans-serif;
+}
+/*
+Painel
+*/
+.webui.panel {
+  border-color: #737373;
+  border-style: solid;
+  border-width: 0.1em;
+  padding: 0;
+  margin: 0;
+}
+.webui.panel > *.title {
+  background-color: #737373;
+  margin: 0;
+  padding: 0.3em;
+  font-size: 1em;
+  color: #FFFFFF;
+}
