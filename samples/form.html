@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WebUI :: Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link href="../dist/webui.css" type="text/css" rel="stylesheet">
+    </head>
+    <body class="webui" style="padding: 2em;">
+
+        <form class="form">
+            <h1 class="title">Formulário simples</h1>
+            <div class="content">
+                <div class="entry">
+                    <label>Campo de texto</label>
+                    <input type="text">
+                </div>
+                <div class="entry">
+                    <label>Campo de senha</label>
+                    <input type="password">
+                </div>
+                <div class="entry">
+                    <label>Campo de número</label>
+                    <input type="number">
+                </div>
+                <div class="entry">
+                    <label>Campo de data</label>
+                    <input type="date">
+                </div>
+                <div class="entry">
+                    <label>Campo de mês</label>
+                    <input type="month">
+                </div>
+                <div class="entry">
+                    <label>Campo de tempo</label>
+                    <input type="time">
+                </div>
+                <div class="entry">
+                    <label>Campo de semana</label>
+                    <input type="week">
+                </div>
+                <div class="entry">
+                    <label>Campo de e-mail</label>
+                    <input type="email">
+                </div>
+                <div class="entry">
+                    <label>Campo de busca</label>
+                    <input type="search">
+                </div>
+                <div class="entry">
+                    <label>Campo de telefone</label>
+                    <input type="tel">
+                </div>
+                <div class="entry">
+                    <label>Campo de URL</label>
+                    <input type="url">
+                </div>
+                <div class="entry">
+                    <label>Campo de arquivo</label>
+                    <input type="file">
+                </div>
+                <div class="entry">
+                    <label>Campo Range</label>
+                    <input type="range">
+                </div>
+                <div class="entry">
+                    <input type="radio">
+                    <label>Campo Radio</label>
+                </div>
+                <div class="entry">
+                    <input type="checkbox">
+                    <label>Campo Checkbox</label>
+                </div>
+            </div>
+        </form>
+        <br>
+        <form class="form">
+            <h1 class="title">Campos modificados</h1>
+            <div class="content">
+                <div class="entry">
+                    <label>Campo requerido</label>
+                    <input type="text" required>
+                </div>
+                <div class="entry">
+                    <label>Campo com placeholder</label>
+                    <input type="text" placeholder="Digite algo aqui...">
+                </div>
+                <div class="entry">
+                    <label>Campo somente leitura</label>
+                    <input type="text" readonly value="Somente leitura">
+                </div>
+                <div class="entry">
+                    <label>Campo desabilitado</label>
+                    <input type="text" disabled value="Desabilitado">
+                </div>
+            </div>
+            <div class="bottombar">
+                <button class="button danger" type="reset">Cancelar</button>
+                <button class="button primary" type="submit">Enviar</button>
+            </div>
+        </form>
+        <br>
+        <form class="form">
+            <h1 class="title">Grupos de campos</h1>
+            <div class="content">
+                <fieldset class="entrygroup">
+                    <legend>Radio</legend>
+                    <div class="entry">
+                        <input type="radio" name="f">
+                        <label>Campo 1</label>
+                    </div>
+                    <div class="entry">
+                        <input type="radio" name="f">
+                        <label>Campo 2</label>
+                    </div>
+                    <div class="entry">
+                        <input type="radio" name="f">
+                        <label>Campo 3</label>
+                    </div>
+                </fieldset>
+                <fieldset class="entrygroup">
+                    <legend>Checkbox</legend>
+                    <div class="entry">
+                        <input type="checkbox" name="f">
+                        <label>Campo 1</label>
+                    </div>
+                    <div class="entry">
+                        <input type="checkbox" name="f">
+                        <label>Campo 2</label>
+                    </div>
+                    <div class="entry">
+                        <input type="checkbox" name="f">
+                        <label>Campo 3</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="bottombar">
+                <button class="button danger" type="reset">Cancelar</button>
+                <button class="button primary" type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </body>
+</html>
